@@ -17,7 +17,7 @@ export const register = async (req, res) => {
   if (password.length < 8) {
     return res.status(200).json({
       success: false,
-      message: "Please enter a minimum of 8 characters in the password field.",
+   
     });
   }
 
@@ -76,7 +76,7 @@ export const login = async (req, res) => {
     if (password.length < 8) {
       return res.status(200).json({
         success: false,
-        message: "Please enter a minimum of 8 characters in the password field.",
+       
       });
     }
 
